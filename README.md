@@ -72,3 +72,26 @@ I used tableau to translate my SQL-derived engagement metrics into interpretable
 **Key insight:** Simulation and Sandbox games account for nearly half of the addressable market, indiciating a large and underserved audience not currently prioritizied by analytics platforms. 
 
 **Visualization 2: Engagement Intensity by Behavior Type**
+
+**Purpose:** Which genres combine high engagement with non-competitive behavior? In other words, comparing normalized engagement rates between competitive and non-competitive games. 
+
+**Metric Used:** reviews_per_year_adj
+
+**Key Insight:** Competitive games show a higher engagement intensity, while simulation game demostrate consistent, sustained engagement over time - highlighting different engagement dynamics rather than weaker engagement. 
+
+**Visualization 3: Engagement Patterns by Genre**
+
+**Purpose:** How large is the untapped audience? In other words, I am identifying game-level engagement behaviors and uncover non-competitive genres with strong engagement signals. 
+
+**Key Insight:** Simulation, indie and casual games show meaningful engagement despite lacking performance-based mechanics, suggesting that there are opportuntoes for alternative analytics frameworks and expansion to simulation. 
+
+**Strategic Implications for Mobalytics**
+
+What the Data Implies: Through these graphs, it shows that high engagement does not require competition games only. There are large, stable audiences that exist outside competitive games or ecosystems that lack meaningful performance feedback. 
+
+Product Expansion Opportunities: Based on my analysis, I believe Mobalytics should introduce non-competitive games on their platform. 
+
+**Features to add**
+* Non-competitive performance metrics (e.g., creative diversity, exploration rate, consistency over time). 
+* AI chatbox that goal sets for sandbox and simulation players
+* Community challenges focused on creation and progression rather than ranking
