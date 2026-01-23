@@ -58,18 +58,17 @@ I used SQLite to scale analysis, define behavioral classifications, and also use
 * SQL views were created to estimate market size by behavioral category, aggregate engagement metrics at the segment level, provide a stable interface for Tableau visualizations
 
 ### 📈 Data Visualization
-Visual 1: Market Size by Engagement Behavior
-* The question I am answering here is "Do simulation and sandbox games represent a meaningful portion of the market?"
 
-INSERT IMAGE HERE 
+I used tableau to translate my SQL-derived engagement metrics into interpretable visuals that support behavioral analysis and strategic decision-making. 
 
-* **What the graph shows**
-    * The x-axis showcases the two main groups of genres, Competitive and Simulation/Sandbox genres. 
-    * The y-axis measures the number of games that go into either of these genres. 
-* **Insight**
-    * The graph aims to showcase based on their genre, how many games are present in competitive vs simulation/sandbox categories.
-    * Around 55,000 competitive games and around 51,000 simulation and sandbox games. 
-* **Interpretation**
-    * Yes, simulation and sandbox games do show meaningful engagement. There is a nearly evenly split close group of users who play simulation/sandbox games just as competitive games.
-    * Analytics platforms are disproportionately focused on competitive games, indicating a substantial underserved segment.
- 
+🔗 Tableau Dashboard: 
+
+**Visualization 1: Market Size by Engagement Behavior*** 
+
+**Purpose:** "Do simulation and sandbox games represent a meaningful portion of the market?" In other words, determining whether simulation and sandbox games represent a meaningful and scalable segement of the market. 
+
+**Data Source:** SQL view aggregating game counts by behavioral category (is_competitive, is_simulation)
+
+**Key insight:** Simulation and Sandbox games account for nearly half of the addressable market, indiciating a large and underserved audience not currently prioritizied by analytics platforms. 
+
+**Visualization 2: Engagement Intensity by Behavior Type**
