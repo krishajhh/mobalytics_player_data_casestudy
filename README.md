@@ -1,3 +1,5 @@
+<img width="768" height="480" alt="image" src="https://github.com/user-attachments/assets/d5b74971-5818-4839-988e-296373f22a4b" />
+
 ## Identifying Untapped Engagement Behaviors for Mobalytics
 Market Research & Data Analytics Case Study
 
