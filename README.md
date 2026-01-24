@@ -1,7 +1,7 @@
 <img width="1128" height="191" alt="image" src="https://github.com/user-attachments/assets/45523bbd-5bd1-4db6-9ae4-ca3611978345" />
 
 ## Identifying Untapped Engagement Behaviors for Mobalytics
-Market Research & Data Analytics Case Study
+Mobalytics Market Research & Data Analytics Case Study
 
 ### 📌 Summary  
 This case study analyzes player engagement patterns across 23,000+ Steam games (2020–2024) to identify high-engagement behaviors not captured by traditional performance analytics platforms. Using normalized, review-based engagement metrics and behavior-first segmentation, the analysis finds that simulation and sandbox games exhibit sustained, non-competitive engagement patterns comparable in scale but different in nature to competitive games. 
