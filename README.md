@@ -61,7 +61,7 @@ I used SQLite to scale analysis, define behavioral classifications, and also use
 
 I used tableau to translate my SQL-derived engagement metrics into interpretable visuals that support behavioral analysis and strategic decision-making. 
 
-🔗 Tableau Dashboard: 
+🔗 Tableau Dashboard: [https://public.tableau.com/views/MobalyticsUntappedEngagementBehaviors2020-2024/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link]
 
 **Visualization 1: Market Size by Engagement Behavior*** 
 
