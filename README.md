@@ -8,7 +8,7 @@ This case study analyzes player engagement patterns across 23,000+ Steam games (
 
 These findings indicate a significant underserved market opportunity and support a data-backed **product expansion strategy** for Mobalytics into **non-competitive performance analytics** focused on creativity, exploration, and long-term consistency.
 
-### 🎯 Context & Problem
+### 🎯 Problem
 During my externship, Mobalytics founder Dr. Amine Issa asked us to develop strategies to expand his platform. For context, Mobalytics is a gaming performance analytics platform that helps players improve their gameplay through data-driven feedback. The platform has successfully established itself within competitive, skill-based games such as Valorant and Call of Duty. 
 
 I noticed a large portion of the gaming market **engages deeply with non-competitive genres**, including simulation, sandbox, and casual games. 
