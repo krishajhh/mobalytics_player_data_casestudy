@@ -19,8 +19,23 @@ Mobalytics can expand to provide these genres with the feedback they need for th
 
 In this study, I address the core problem of whether high-engagement player behaviors exist outside competitive contexts and whether these behaviors justify **expanding** Mobalytics’ **analytics framework to non-competitive games** beyond competitive play. 
 
+### 🧠 Market Research 
+
+My project follows an exploratory market research and behavioral analytics approach to evaluate whether meaningful, high-engagement player segments exist outside competitive gaming ecosystems.
+
+Because direct player telemetry, demographic data, and internal platform metrics were unavailable, I used Steam game metadata and review activity as proxies for player engagement in this study. This approach is commonly used in market research to assess engagement intensity, longevity, and user interest when first-party data is inaccessible.
+
+The analysis is designed to answer three market-level questions:
+   * Market Size: How large is the non-competitive gaming segment relative to competitive games?
+   * Engagement Dynamics: Do non-competitive games exhibit sustained engagement over time?
+   * Product Opportunity: Are there engagement behaviors not currently served by performance-focused analytics platforms?
+
+Rather than predicting individual player behavior, this research focuses on segment-level patterns to inform product expansion strategy, identify underserved audiences, and evaluate the feasibility of extending analytics frameworks beyond competitive play.
+
+**Research Type:** Exploratory market research, behavioral segmentation, and market sizing analysis using proxy engagement data.
+
 ### 📊 Data Source 
-Steam Games Metadata and Player Reviews (2020-2024): The primary dataset used for this analysis is the steam_engagement_clean.csv file, containing detailed information about 23,107 games, 31+ million user reviews, game level metadata, engagement proxies (negative/positive reviews). 
+Steam Games Metadata and Player Reviews (2020-2024): The primary dataset used for this analysis is the steam_engagement_clean.csv file, containing detailed information about 23,107 games, 31+ million user reviews, game level metadata, and engagement proxies (negative/positive reviews). 
 * Steam review data is used as a behavioral proxy for engagement because direct telemetry or demographic data is unavailable. 
 * The dataset reflects PC gaming behavior and captures engagement during a pivotal period of digital gaming growth.
 
@@ -43,25 +58,24 @@ In the inital data preparation phase, I performed the following tasks with Excel
 3. Sanity Checks
    - I created a pivot table to validate my average engagement by genre, confirm the expected distribution patterns and also identify any null or malformed genre entries so I can exclude them. 
 
-### Exploratory Data Analysis
+### 👩🏻‍💻 Exploratory Data Analysis
 I used SQLite to scale analysis, define behavioral classifications, and also use for my visualizations in Tableau. 
-
 1. Data Model
-   - I structured each row representative of one game and one genre combination. Some games with multiple genres would appear in multiple rows. This structure allowed me to enable genre level behavioral analysis without having to collapse multi-genre games in a single category. 
+* I structured each row representative of one game and one genre combination. Some games with multiple genres would appear in multiple rows. This structure allowed me to enable genre level behavioral analysis without having to collapse multi-genre games in a single category. 
 
-2. Behavioral Classification
-   - To move beyond surface level genre analysis, I chose to introduce two behavioral flags, is_competitive and is_simulation. Is_competitive includes genres from action, shooter, sports, fighting, racing, etc. Is_simulation includes genres from simulation, sandbox, casual, management, indie, etc.
-   - These 2 flags or categories allowed me to aggregate by player behavior type, rather than relying solely on genre labels.  
+3. Behavioral Classification
+* To move beyond surface level genre analysis, I chose to introduce two behavioral flags, is_competitive and is_simulation. Is_competitive includes genres from action, shooter, sports, fighting, racing, etc. Is_simulation includes genres from simulation, sandbox, casual, management, indie, etc.
+* These 2 flags or categories allowed me to aggregate by player behavior type, rather than relying solely on genre labels.  
 
-3. Engagement Comparison Queries
-   - Using the reviews_per_year_adj, I compared engagement across behavioral categories to answer my key questions.
-     - Do simulation and sandbox games show sustained engagement?
-     - How does engagement differ between competitive and non-competitive games?
-     - What proportion of the market falls into each behavioral segment?
-- All aggregation queries used normalized engagement metrics to ensure fair comparison across release years. 
+4. Engagement Comparison Queries
+* Using the reviews_per_year_adj, I compared engagement across behavioral categories to answer my key questions.
+*       Do simulation and sandbox games show sustained engagement?
+*       How does engagement differ between competitive and non-competitive games?
+*       What proportion of the market falls into each behavioral segment?
+*    All aggregation queries used normalized engagement metrics to ensure fair comparison across release years. 
 
 4. Market Sizing & View Creation
-   - SQL views were created to estimate market size by behavioral category, aggregate engagement metrics at the segment level, provide a stable interface for Tableau visualizations
+* SQL views were created to estimate market size by behavioral category, aggregate engagement metrics at the segment level, provide a stable interface for Tableau visualizations
 
 ### 📈 Data Visualization
 I used tableau to translate my SQL-derived engagement metrics into interpretable visuals that support behavioral analysis and strategic decision-making. 
@@ -76,7 +90,7 @@ I used tableau to translate my SQL-derived engagement metrics into interpretable
 **Visualization 2: Engagement Intensity by Behavior Type**
 * **Purpose:** Which genres combine high engagement with non-competitive behavior? In other words, comparing normalized engagement rates between competitive and non-competitive games. 
 * **Metric Used:** reviews_per_year_adj
-* **Key Insight:** Competitive games show a higher engagement intensity, while simulation game demostrate consistent, sustained engagement over time - highlighting different engagement dynamics rather than weaker engagement. 
+* **Key Insight:** Competitive games show a higher engagement intensity, while simulation games demonstrate consistent, sustained engagement over time - highlighting different engagement dynamics rather than weaker engagement. 
 
 **Visualization 3: Engagement Patterns by Genre**
 * **Purpose:** How large is the untapped audience? In other words, I am identifying game-level engagement behaviors and uncover non-competitive genres with strong engagement signals. 
