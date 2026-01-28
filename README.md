@@ -9,11 +9,15 @@ This case study analyzes player engagement patterns across 23,000+ Steam games (
 These findings indicate a significant underserved market opportunity and support a data-backed **product expansion strategy** for Mobalytics into **non-competitive performance analytics** focused on creativity, exploration, and long-term consistency.
 
 ### 🎯 Context & Problem
-Mobalytics is a gaming performance analytics platform designed to help players improve their gameplay through data-driven feedback. The platform has successfully established itself within competitive, skill-based games such as Valorant and Call of Duty, where performance is defined by rankings, mechanical execution, and win-loss outcomes.
+During my externship, Mobalytics founder Dr. Amine Issa asked us to develop strategies to expand his platform. For context, Mobalytics is a gaming performance analytics platform that helps players improve their gameplay through data-driven feedback. The platform has successfully established itself within competitive, skill-based games such as Valorant and Call of Duty. 
 
-During my Market Research and Data Analytics Externship, I noticed a large portion of the gaming market engages deeply with non-competitive genres, including simulation, sandbox, and casual games. These players demonstrate strong engagement but lack access to meaningful performance feedback, as traditional analytics tools are optimized for competitive metrics.
+I noticed a large portion of the gaming market **engages deeply with non-competitive genres**, including simulation, sandbox, and casual games. 
 
-The core problem I want to address in this study is whether high-engagement player behaviors exist outside competitive contexts, and whether these behaviors justify expanding Mobalytics’ analytics framework beyond competitive play. 
+These players demonstrate strong engagement but lack access to meaningful performance feedback, as traditional analytics tools are optimized for competitive metrics. 
+
+Mobalytics can expand to provide these genres with the feedback they need for their gameplay. 
+
+In this study, I address the core problem of whether high-engagement player behaviors exist outside competitive contexts and whether these behaviors justify **expanding** Mobalytics’ **analytics framework to non-competitive games** beyond competitive play. 
 
 ### 📊 Data Source 
 Steam Games Metadata and Player Reviews (2020-2024): The primary dataset used for this analysis is the steam_engagement_clean.csv file, containing detailed information about 23,107 games, 31+ million user reviews, game level metadata, engagement proxies (negative/positive reviews). 
